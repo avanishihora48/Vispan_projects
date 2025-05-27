@@ -1,0 +1,131 @@
+@font-face {
+    font-family: "Variable";
+    src: url("../Fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Variable", sans-serif;
+}
+
+
+.header
+{
+    background-image: linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.2)),  url(../Assets/ShipChain-image-01.jpg);
+    width: 100%;
+    height: 500px;
+    background-repeat:no-repeat;
+    position: relative;
+}
+
+.shipping {
+    background-image: url("../Assets/ShipChain-image-02.png");
+    width: 60%;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: 300px 300px;
+    background-position-x: -10;
+    background-position-y: 150px; 
+    position: relative;
+    margin-top: 10px;
+}
+
+
+.plane img{
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.9);
+    border-radius: 30px;
+}
+
+.service-block {
+    position: relative;
+    padding-right: 30px;
+  }
+
+  .container-img img
+  {
+     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.9);
+     border-radius: 30px;
+  }
+
+  .about-us img{
+     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.9);
+     border-radius: 29px;
+  }
+
+  .chain-img {
+    background-image: url("../Assets/ShipChain-image-13.png");
+    width: 100%;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: 600px 350px;
+    position: relative;
+    background-position: right center;
+    margin-top: 10 !important;
+}
+
+.line-spaced{
+   line-height: 1.8;
+}
+
+.card img{
+     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.9);
+     border-radius: 25px;
+}
+
+.service-block {
+  position: relative;
+  padding-right: 30px;
+  color: white;
+  max-width: 300px;
+  flex: 1 1 30%;
+}
+
+.service-block:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5px;
+  height: 100%;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.testimonial-section {
+  background-color: #3180b9;
+  background-image: url('../Assets/ShipChain-image-38-10.png'); 
+  background-repeat: repeat;
+  background-size: 250px auto;
+  background-position: center;
+  color: white;
+  gap: 80px;
+}
+
+
+ 
+  @media only screen and (max-width: 768px ) {
+ 
+    
+  .service-block {
+    padding-right: 0;
+    padding-bottom: 30px;
+  }
+
+  .service-block:not(:last-child)::after {
+    top: 100%;
+    left: 50%;
+    right: auto;
+    width: 60%;
+    height: 1px;
+    transform: translateX(-50%);
+  }
+} 
