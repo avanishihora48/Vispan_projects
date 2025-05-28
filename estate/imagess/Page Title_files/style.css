@@ -23,16 +23,18 @@ body {
     height: 500px;
     background-repeat:no-repeat;
     position: relative;
-    background-size: cover;
-    background-position: center center;
 }
 
 .shipping {
     background-image: url("../Assets/ShipChain-image-02.png");
+    width: 60%;
+    height: 350px;
     background-repeat: no-repeat;
     background-size: 300px 300px;
-    background-position: -30px 250px;
+    background-position-x: -10;
+    background-position-y: 150px; 
     position: relative;
+    margin-top: 10px;
 }
 
 
@@ -107,8 +109,6 @@ body {
 }
 
 
-
-
   @media (max-width: 780px) {
 
     *,
@@ -159,25 +159,19 @@ body {
   }
 
   .navbar-call{
-    width: 100% !important;
+    width: 30% !important;
      margin-left: 10px !important;
   }
   .navbar-search input {
-    width: 100% !important;
+    width: 80% !important;
     max-width: none !important;
   }
 
   .navbar-menu ul {
-    width: 100% !important;
     flex-direction: row !important;
     align-items: flex-start !important;
-    gap: 25px !important;
-    background-color: aqua;
-  }
-
-  .navbar-menu ul li {
-    width: 100%;
-    gap: 25px !important;
+    gap: 10px !important;
+    margin-right: 100px;
   }
 
   .header-content {
@@ -198,10 +192,7 @@ body {
     text-align: center !important;
   }
 
- .shipping-service{
-    background-size: cover;
-    background-position: center center;
- }
+ 
 
   .shipping-container{
     flex-direction: column !important ;
@@ -244,7 +235,9 @@ body {
     margin-left: 0 !important;
   }
 
-  
+
+
+
 
 
     .service-block {
@@ -261,162 +254,14 @@ body {
     }
   }
 
-  @media (max-width: 1600px) {
+  @media (max-width: 1360px) {
+    .shipping-content {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    }
 
-  nav.navbar-headings {
-    padding: 0 2rem;
+    .plane-img {
+      max-width: 100%;
+      height: auto;
+    }
   }
-
-  .navbar-logo {
-    width: 20%;
-  }
-
-  .navbar-logo img {
-    width: 220px; 
-  }
-
-  .navbar-contact {
-    width: 80%;
-    padding-right: 1.5rem;
-  }
-
-  .navbar-content {
-    gap: 1.5rem; 
-  }
-
-  .navbar-call i {
-    font-size: 1.1rem; 
-  }
-
-  .navbar-call span {
-    font-size: 0.9rem; 
-  }
-
-  .navbar-search input.form-control {
-    max-width: 150px; 
-    border-radius: 12px;
-  }
-
-  .navbar-menu ul {
-    gap: 3rem; 
-    font-size: 0.95rem;
-  }
-
-  .header-content h1 {
-    font-size: 40px !important; 
-  }
-
-  .header-content p {
-    font-size: 1rem; 
-    line-height: 1.4;
-    margin-top: 1.5rem;
-  }
-
-  .header .text-center.position-absolute {
-    top: 70px !important; 
-    padding: 0 1rem;
-  }
-
-  .shipping-section{
-    background-size: cover;
-    background-position: center center;
- }
-
-  .shipping-container {
-    gap: 60px; 
-  }
-
-  .shipping {
-    width: 55%;       
-    height: 500px;   
-  }
-
-  .shipping-content {
-    margin-left: 50px;  
-  }
-
-  .plane {
-    height: 450px;   
-  }
-
-  .plane img {  
-    height: auto;
-  }
-
-   .service-section {
-    padding-left: 80px;
-    padding-right: 80px;
-  }
-
-  .service-content {
-    gap: 60px; /* more space between image and text */
-  }
-
-  .service-img img {
-    width: 100%;      /* let image fill container */
-    max-width: 520px; /* max width same as original */
-    height: auto;     /* keep aspect ratio */
-    margin-left: 0;   /* remove left margin for cleaner alignment */
-  }
-
-  .service-freight {
-    text-align: left !important; /* ensure left align on large screens */
-    margin-top: 0 !important;    /* remove top margin */
-  }
-
-  .cards {
-    padding-left: 100px;
-    padding-right: 100px;
-    gap: 50px; /* add spacing between blocks */
-  }
-
-  .service-block {
-    margin-left: 0 !important; /* reset margin-left to align blocks properly */
-    max-width: 320px;
-    flex: 1 1 30%;
-  }
-
-  /* Optional: Adjust button widths and font sizes for better appearance */
-  .service-block button,
-  .service-freight button {
-    width: 160px;
-    font-size: 19px;
-  }
-
-  .service-block {
-    flex: 1 1 30%;
-    max-width: 300px;
-    color: white;
-    text-align: start;
-    padding: 10px;
-  }
-
-  .cards {
-    width: 100%;
-    background-size: cover;
-  }
-
-  .cards .service-block:last-child {
-    margin-right: 0;
-  }
-
-  .cards2 {
-    width: 100%;
-    background-size: cover;
-  }
-
-  .cards2 .service-block:last-child {
-    margin-right: 0;
-  }
-
-  .service-block:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 5px;
-    height: 100%;
-    background-color: white;
-    border-radius: 2px;
-  }
-}

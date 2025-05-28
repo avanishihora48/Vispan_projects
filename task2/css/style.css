@@ -111,7 +111,10 @@ body {
 }
 
 
-  @media (max-width: 768px) {
+  @media (max-width: 780px) {
+
+  
+
     .service-block {
       padding-right: 0;
       padding-bottom: 30px;
