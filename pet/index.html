@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>We Love Pets</title>
+  <style>
+    @font-face {
+        font-family: "abrah";
+        src: url('./fonts/abrah/Abrah.otf');
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        background: #22aacc;
+        color: #fff;
+        text-align: center;
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      right: 107px;
+      z-index: 10;
+    }
+
+    .logo img {
+      height: 104px;
+    }
+
+    .container {
+      display: flex;
+      position: relative;
+      /* margin-top: 100px; */
+      margin-left: 44px;
+    }
+
+    .pet-img img {
+       width: 984px;
+        height: 92%;
+        margin-top: 80px;
+    }
+
+    .content {
+      width: 100%;
+      position: absolute;
+      left: 418px;
+    }
+
+    .disc {
+      margin-top: 267px;
+      margin-left: 242px;
+    }
+
+    .content p {
+      margin: 0;
+    }
+
+    .heading {
+      font-size: 12vw;
+      font-weight: 100;
+      text-align: left;
+      font-family: "abrah";
+      margin: 0;
+    }
+
+    .heading img {
+      width: 88px;
+      height: 91px;
+    }
+
+    .pets {
+      font-size: 246px;
+      /* padding-left: 106px; */
+      font-weight: 500;
+      color: yellow;
+      text-shadow: 11px 8px 8px yellowgreen;
+      font-family: "abrah";
+      letter-spacing: 5px;
+      line-height: 1.2;
+    }
+
+    .discription {
+      font-size: 43px;
+      text-align: center;
+      font-family: "abrah";
+      margin-left: 10px;
+    }
+
+    .services {
+      display: flex;
+      flex-direction: column;
+      gap: 47px;
+      max-width: 361px;
+      margin-left: 338px;
+      margin-top: 53px;
+    }
+
+    .service {
+      background: #fff;
+      color: #000;
+      padding: 20px 32px;;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border: yellow 2px solid;
+      position: relative;
+      font-size: 41px;
+      font-family: "abrah";
+      color: #0a9fba;
+    }
+
+    .service img {
+      width: 71px;
+    height: 74px;
+    background-color: yellow;
+    padding: 16px;
+    border-radius: 54px;
+    position: absolute;
+    margin-left: 267px;
+    }
+
+    .link {
+      display: flex;
+        text-align: start;
+        margin-left: 346px;
+        margin-top: 272px;
+        font-size: 48px;
+        font-weight: 100;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="pet-img">
+      <img src="./image/Pet-Care.png" alt="Pet Care">
+    </div>
+    
+    <div class="content">
+        <div class="logo">
+      <img src="./image/logo.png" alt="Logo">
+    </div>
+      <div class="disc">
+        <p class="heading">We Love <img src="./image/feet.png" alt="feet"></p>
+        <p class="pets">PETS</p>
+        <p class="discription">All your pet needs.</p>
+        <div class="services">
+          <div class="service">Practice <img src="./image/bone.png" alt="Practice"></div>
+          <div class="service">Pet Food <img src="./image/food.png" alt="Pet Food"></div>
+          <div class="service">Boarding <img src="./image/shelter.avif" alt="Boarding"></div>
+        </div>
+        <div class="link">
+          <p>Powered by <a href="https://vispan.ai/" style="color: white;">vispan.ai</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
